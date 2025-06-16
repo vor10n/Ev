@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты с разработчиком</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="background-icons"></div>
+    
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="./index.html" class="nav-link">Главная</a>
+            <a href="./history.html" class="nav-link">Хронология</a>
+            <a href="./technolohy.html" class="nav-link">Технологии</a>
+            <a href="#contact" class="active">Контакты</a>
+        </div>
+    </nav>
+
+    <section id="contact">
+        <h1 class="contact-title">Связь с разработчиком</h1>
+        <p class="contact-subtitle">Есть вопросы или предложения? Заполните форму ниже, и я отвечу вам в ближайшее время.</p>
+        
+        <form class="contact-form" id="feedback-form">
+            <div class="form-group">
+                <label class="form-label" for="name">Ваше имя</label>
+                <input type="text" id="name" class="form-input" placeholder="Олег Олегович Ольга" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="email">Электронная почта</label>
+                <input type="email" id="email" class="form-input" placeholder="name@mail.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="subject">Тема сообщения</label>
+                <input type="text" id="subject" class="form-input" placeholder="Предложение/доработки">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="message">Ваше сообщение</label>
+                <textarea id="message" class="form-textarea" placeholder="Сайт крутой, мне все нравится." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+        
+        <div class="contact-info">
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            alert('Сообщение отправлено! Спасибо за ваш отзыв.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

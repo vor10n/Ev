@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Эволюция компьютерной графики</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <style>
+        #home {
+            min-height: 0vh;
+            padding: 0px 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            margin: 4rem 0 2rem;
+            color: #d4e3ec;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .hero-title2 {
+            font-size: 2.0rem;
+            margin: 4rem 0 2rem;
+            color: #9ab3c5;
+            font-weight: 300;
+            line-height: 1.2;
+            border-bottom: 2px solid #4a5b6b;
+        }
+
+        .h3 {
+            font-size: 1.4rem;
+            color: #9ab3c5;
+            margin-bottom: 3rem;
+            text-align: justify;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #9ab3c5;
+            margin-bottom: 3rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #9ab3c5;
+            border-bottom: 2px solid #4a5b6b;
+            padding-bottom: 2px;
+        }
+
+        .active {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+            position: relative;
+            width: 100%;
+            border-bottom: 3px solid #9ab3c5;
+
+        }
+
+        @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+        .nav-links {
+            gap: 1.5rem;
+        }
+        .description {
+            font-size: 1rem;
+            text-align: left;
+        }
+        }
+    </style>
+    <div class="background-icons"></div>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home" class="active">Главная</a>
+            <a href="./history.html" class="nav-link">Хронология</a>
+            <a href="./technolohy.html" class="nav-link">Технологии</a>
+            <a href="./about.html" class="nav-link">Контакты</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1 class="hero-title">
+            От пикселей к<br>
+            <span class="highlight">виртуальным мирам</span>
+        </h1>
+
+        <p class="description">
+            Исследуйте эволюцию компьютерной графики - от первых алгоритмов до нейросетевого рендеринга.
+            Узнайте, как технологии изменили кино, игры и научную визуализацию в разных областях, например:
+        </p>
+
+        <p class="description">
+            • <strong>Кинематограф</strong> — от простых векторных моделей в «Троне» до фотореалистичных
+            вселенных Marvel<br>
+            • <strong>Игровую индустрию</strong> — эволюция от 8-битных спрайтов до открытых миров с
+            трассировкой лучей<br>
+            • <strong>Научную визуализацию</strong> — инструменты для моделирования сложных систем и молекулярных
+            структур
+        </p>
+
+        <hr class="full-width-divider">
+
+        <h2 class="hero-title2">Компьютерная графика, их виды и расширения</h2>
+        <p class="description">
+            <a href="https://ru.wikipedia.org/wiki/Компьютерная_графика" class="button">Компьютерная графика</a> — это область информатики, занимающаяся созданием, обработкой и
+            визуализацией
+            изображений с помощью компьютера. Она включает в себя методы генерации графических объектов, их
+            редактирование и вывод на экран или печать.
+        </p>
+
+        <hr class="full-width-divider2">
+
+        <p class="h3">Виды и их расширения</p>
+        <p class="description">
+            <a href="https://ru.wikipedia.org/wiki/Растровая_графика" class="button">Растровая графика</a> — это цифровое изображение, состоящее из массива пикселей (точек),
+            каждый из которых имеет свой цвет и координаты. Чем больше пикселей в изображении, тем выше его детализация.
+            При увеличении такого изображения становится заметна пикселизация (ступенчатые края).
+        </p>
+
+        <p class="description">
+            <strong>.jpg / .jpeg</strong> — сжатие с потерями<br>
+            <strong>.png</strong> — сжатие без потерь, поддержка прозрачности<br>
+            <strong>.gif</strong> — анимация, ограниченная палитра<br>
+            <strong>.bmp</strong> — без сжатия, большой размер<br>
+            <strong>.tiff / .tif</strong> — высокое качество, для печати<br>
+            <strong>.webp</strong> — современный формат с хорошим сжатием<br>
+        </p>
+
+        <hr class="full-width-divider2">
+
+        <p class="description">
+            <a href="https://ru.wikipedia.org/wiki/Векторная_графика" class="button">Векторная графика</a> — это способ представления изображений с помощью математических формул,
+            описывающих геометрические фигуры (линии, кривые, окружности, многоугольники). Такие изображения можно
+            масштабировать без потери качества, так как они пересчитываются при изменении размера.
+        </p>
+
+        <p class="description">
+            <strong>.svg</strong> — масштабируемая векторная графика для web<br>
+            <strong>.ai</strong> — Adobe Illustrator<br>
+            <strong>.eps</strong> — Encapsulated PostScript<br>
+            <strong>.cdr</strong> — CorelDRAW<br>
+            <strong>.pdf</strong> — может содержать векторные элементы
+        </p>
+
+        <hr class="full-width-divider2">
+
+        <p class="description">
+            <a href="https://media.contented.ru/glossary/fraktalnaya-grafika/" class="button">Фрактальная графика</a> — это вид компьютерной графики, основанный на математических
+            алгоритмах, генерирующих самоподобные структуры (фракталы). Такие изображения обладают бесконечной
+            детализацией и часто используются в цифровом искусстве и научной визуализации.
+        </p>
+
+        <p class="description">
+            Они сохраняются в растровых (<strong>.jpg .png</strong>) или в векторных (<strong>.svg</strong>) форматах
+        </p>
+
+        <hr class="full-width-divider2">
+
+        <p class="description">
+            <a href="https://3dradar.ru/post/54889/" class="button">3D-графика</a> — это создание и обработка объёмных моделей в трёхмерном пространстве с использованием полигонов,
+            текстур, освещения и спецэффектов. Она применяется в кинематографе, играх, архитектуре и виртуальной
+            реальности.
+        </p>
+
+        <p class="description">
+            <strong>.obj</strong> — универсальный 3D-формат<br>
+            <strong>.fbx</strong> — Autodesk, для анимации<br>
+            <strong>.blend</strong> — Blender<br>
+            <strong>.3ds / .max</strong> — 3D Studio Max<br>
+            <strong>.stl</strong> — 3D-печать
+        </p>
+
+    </section>
+</body>
+
+</html>

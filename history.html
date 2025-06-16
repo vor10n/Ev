@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хронология развития компьютерной графики</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        .hero-title {
+        font-size: 2.8rem;
+        margin: 4rem 0 2rem;
+        color: #d4e3ec;
+        font-weight: 300;
+        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .highlight {
+        color: #9ab3c5;
+        border-bottom: 2px solid #4a5b6b;
+        padding-bottom: 2px;
+    }
+    @media (max-width: 1400px) {
+        iframe{
+            scale: 80%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="background-icons"></div>
+    
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="./index.html" class="nav-link">Главная</a>
+            <a href="#history" class="active">Хронология</a>
+            <a href="./technolohy.html" class="nav-link">Технологии</a>
+            <a href="./about.html" class="nav-link">Контакты</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1 class="hero-title">
+                История развития<br><span class="highlight">Компьютерной графики</span>
+        </h1>
+        <div class="video-wrapper">
+            <iframe
+                width="800"
+                height="505"
+                src="https://rutube.ru/play/embed/8571987ad07656b0ac26dbce43f337b6"
+                frameborder="0"
+                allow="clipboard-write; autoplay"
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen>
+            </iframe>
+        </div>
+        <div class="highlight" style="width: 80%; margin: 0 auto;"></div>
+    </div>
+    <div class="timeline-section">
+        <!-- Карточка 1 -->
+        <div class="timeline-card" data-card="1">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/1950.jpg')"></div>
+                <div class="card-content">
+                    <div class="card-year">1950-е</div>
+                    <h2 class="card-title">Рождение компьютерной графики</h2>
+                    <p class="card-description">Первые шаги визуализации данных на ЭВМ с использованием осциллографов и векторных дисплеев.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>Появление первых электронно-вычислительных машин дало толчок визуализации данных. В 1951 году проект Whirlwind (MIT) использовал осциллограф с электронно-лучевой трубкой для отображения графиков. В 1950-х годах начались эксперименты с векторными дисплеями, способными рисовать простые линии и фигуры электронным лучом напрямую на экране.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="timeline-card" data-card="2">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/1963.png')"></div>
+                <div class="card-content">
+                    <div class="card-year">1963</div>
+                    <h2 class="card-title">Sketchpad - Первая интерактивная система</h2>
+                    <p class="card-description">Айвен Сазерленд создает революционную интерактивную систему рисования.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>Американский ученый Айвен Сазерленд разработал Sketchpad - первую в мире интерактивную графическую систему. Она использовала световое перо и позволяла пользователю создавать и манипулировать геометрическими объектами на экране векторного дисплея в реальном времени. Sketchpad считается отправной точкой интерактивной компьютерной графики, заложив основы современных САПР и графических интерфейсов.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="timeline-card" data-card="3">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/1970.jpg')"></div>
+                <div class="card-content">
+                    <div class="card-year">1970-е</div>
+                    <h2 class="card-title">Эра растровой графики</h2>
+                    <p class="card-description">Растровые дисплеи вытесняют векторные, появляются первые алгоритмы обработки пикселей.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>1970-е ознаменовались переходом от векторных к растровым дисплеям. В отличие от векторов, растровая графика работала с отдельными пикселями, что позволяло создавать более сложные и детализированные изображения, включая сплошные области и текстуры. Это привело к разработке фундаментальных алгоритмов: 
+                    <a href="https://ru.wikipedia.org/wiki/Алгоритм_Брезенхэма" target="_blank">Брезенхема</a> (рисование линий), 
+                    <a href="https://en.wikipedia.org/wiki/Flood_fill?ysclid=mbifrq2nlu886322415" target="_blank">Flood Fill</a> (заливка), 
+                    <a href="https://ru.wikipedia.org/wiki/Экранное_сглаживание" target="_blank">Anti-aliasing</a> (сглаживание ступенчатости). Пионером в этой области был Xerox PARC, где также разрабатывались концепции графического интерфейса пользователя (GUI). Растровая графика дала жизнь первым компьютерным играм (Pong, 1972) и игровым консолям с цветной графикой (Atari 2600, 1976), стимулировав появление первых специализированных графических чипов.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="timeline-card" data-card="4">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/1980.png')"></div>
+                <div class="card-content">
+                    <div class="card-year">1980-е</div>
+                    <h2 class="card-title">Зарождение трехмерной графики</h2>
+                    <p class="card-description">Разработка ключевых алгоритмов 3D-рендеринга и появление первых 3D-игр и применений в кино.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>1980-е стали временем расцвета 3D-графики. Были разработаны основополагающие алгоритмы: 
+                    <a href="https://ru.wikipedia.org/wiki/Z-буферизация" target="_blank">Z-буферизация</a> (управление глубиной), 
+                    <a href="https://ru.wikipedia.org/wiki/Алгоритм_художника" target="_blank">алгоритм художника</a> (сортировка полигонов), 
+                    модели затенения <a href="https://ru.wikipedia.org/wiki/Затенение_по_Фонгу" target="_blank">Гуро и Фонга</a> (реалистичное освещение). Появились первые 3D-игры, использующие проволочные модели (wireframe), например, Battlezone (1980), а к концу десятилетия - игры с заполненными полигонами. В кино фильм "Трон" (1982) стал вехой в использовании компьютерной графики (CGI), хотя большинство эффектов еще создавались традиционно. Начали развиваться профессиональные инструменты: Silicon Graphics (SGI) создала 
+                    <a href="https://en.wikipedia.org/wiki/IRIS_GL?ysclid=mbig43paot595335988">IRIS GL</a> (предшественник OpenGL), появились массовые 
+                    <a href="https://ru.wikipedia.org/wiki/Система_автоматизированного_проектирования" target="_blank">CAD-системы</a> (AutoCAD, 1982) и 3D-редакторы (3D Studio - предок 3ds Max).</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 5 -->
+        <div class="timeline-card" data-card="5">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/1990.webp')"></div>
+                <div class="card-content">
+                    <div class="card-year">1990-е</div>
+                    <h2 class="card-title">Прорыв в кино и демократизация 3D</h2>
+                    <p class="card-description">Фотореалистичная графика в кино, первый полнометражный CGI-мультфильм и появление доступных 3D-ускорителей.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>1990-е - "золотой век" компьютерной графики в кино: "Терминатор 2" (1991) с революционным жидкометаллическим T-1000, "Парк Юрского периода" (1993) с фотореалистичными динозаврами (на станциях SGI RealityEngine), и первый полнометражный компьютерный мультфильм "История игрушек" (1995). Ключевым событием для массового рынка стал релиз 3D-ускорителя 3dfx Voodoo (1995) за $300. Он привнес в ПК-гейминг текстурирование и Z-буферизацию, сделав возможными сложные 3D-миры в играх типа "Quake" и "Tomb Raider". NVIDIA в 1999 году представила GeForce 256 - первую GPU с аппаратным T&L (Transform & Lighting), разгрузившую CPU.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 6 -->
+        <div class="timeline-card" data-card="6">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/2000.jpg')"></div>
+                <div class="card-content">
+                    <div class="card-year">2000-е</div>
+                    <h2 class="card-title">Эра программируемых шейдеров</h2>
+                    <p class="card-description">Появление шейдеров дает художникам невиданный контроль над каждым пикселем. GPU становятся универсальными вычислителями.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>В 2001 году видеокарты GeForce 3 (NVIDIA) и Radeon 8500 (ATI) представили программируемые шейдеры (вершинные и пиксельные). Это дало художникам и разработчикам беспрецедентный контроль над визуализацией, позволяя реалистично симулировать сложные материалы, динамическое освещение, тени и эффекты (блики воды, искажения). В 2006 году NVIDIA представила архитектуру CUDA, превратив GPU в мощные универсальные процессоры (GPGPU), что открыло двери для GPU-рендеринга (например, в Blender) и заложило основы для будущего использования в машинном обучении и ИИ.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 7 -->
+        <div class="timeline-card" data-card="7">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/2010-2020.webp')"></div>
+                <div class="card-content">
+                    <div class="card-year">2010-е - 2020-е</div>
+                    <h2 class="card-title">Трассировка лучей и нейросети</h2>
+                    <p class="card-description">Реализация кинематографического качества в реальном времени и использование ИИ для генерации графики.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>Стремление к гиперреализму привело к внедрению технологий вроде Tessellation (DirectX 11) для детализации поверхностей. Настоящий прорыв произошел в 2018 году с выпуском NVIDIA RTX 2080, оснащенной специализированными RT-ядрами для аппаратной трассировки лучей (ray tracing) в реальном времени. Эта технология, ранее доступная только для оффлайн-рендеринга в кино, позволила достичь невероятного реализма в освещении, отражениях и тенях в играх ("Cyberpunk 2077", "Minecraft RTX"). (Изображение 3: RTX 2080) К 2024 году фокус сместился на интеграцию ИИ-ускорителей (нейромодулей) в GPU (например, NVIDIA Blackwell) для генерации текстур, анимации лиц и создания цифровых двойников за минуты вместо месяцев. Движки Unreal Engine 5 с технологиями Nanite (киношные модели без оптимизации) и Lumen (динамическое глобальное освещение) стирают грань между играми и кино ("Fortnite", "The Matrix Awakens"). Открытое ПО (Blender 2.8+) бросило вызов дорогим профессиональным пакетам.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 8 -->
+        <div class="timeline-card" data-card="8">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/1980-2020.jpg')"></div>
+                <div class="card-content">
+                    <div class="card-year">1980-е - 2020-е</div>
+                    <h2 class="card-title">Эволюция ПО: от Alias до ИИ-инструментов</h2>
+                    <p class="card-description">Развитие профессиональных и доступных инструментов для создания 2D и 3D графики, анимации и визуальных эффектов.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>Революция в железе сопровождалась взрывным развитием ПО. Ранние профессиональные инструменты включали Alias Studio (1986, основа для CGI в "Т2") и Autodesk Maya (1995, стандарт киноиндустрии - "Аватар", "Мстители"). В игровой индустрии движки Unreal Engine (с 1998) и Unity (особенно с 2015, поддержка VR/PBR) дали мощные инструменты разработчикам любого уровня. Бесплатный Blender (с обновлением 2.8 в 2018) стал полноценной альтернативой Maya для 3D-моделирования, анимации, VFX и даже полнометражных фильмов ("Spring"). Современные пакеты (Photoshop (Изобр. 5, 6), Blender (Изобр. 7, 8), After Effects *(Изобр. 9, 10, 11 - Железный человек 3)*, Premiere Pro (Изобр. 9), Vegas Pro (Изобр. 10)) охватывают все аспекты создания графики - от 2D-рисунка и ретуши фото до сложнейшей 3D-анимации и композитинга киноэффектов. Появление ИИ (MidJourney и др.) начинает менять сам процесс создания контента, позволяя генерировать изображения и модели по текстовым запросам.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Карточка 9 -->
+        <div class="timeline-card" data-card="9">
+            <div class="card-header">
+                <div class="card-image" style="background-image: url('./img/2030.jpg')"></div>
+                <div class="card-content">
+                    <div class="card-year">2030-е?</div>
+                    <h2 class="card-title">Нейроинтерфейсы и квантовый рендеринг?</h2>
+                    <p class="card-description">Технологии будущего могут сделать визуальное творчество интуитивным, как мысль.</p>
+                    <div class="card-expand-indicator">
+                        <div class="indicator-open">+</div>
+                        <div class="indicator-close">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-full-content">
+                <div class="full-content-inner">
+                    <p>Прогресс компьютерной графики неумолим. К 2030 году ожидается появление технологий, которые радикально изменят процесс создания и восприятия визуального контента: нейроинтерфейсы для интуитивного "мысленного" творчества и квантовый рендеринг для мгновенной визуализации невероятно сложных сцен. Границы между реальностью и цифровыми мирами продолжат стираться в метавселенных, а инструменты создания станут доступны абсолютно каждому.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+    <script>
+document.querySelectorAll('.timeline-card').forEach(originalCard => {
+    originalCard.addEventListener('click', (e) => {
+        if(document.querySelector('.modal-overlay.active')) return;
+        
+        const clonedCard = originalCard.cloneNode(true);
+        clonedCard.classList.add('active', 'cloned');
+        
+        const closeIndicator = clonedCard.querySelector('.indicator-close');
+        
+        document.body.appendChild(clonedCard);
+        
+        document.querySelector('.modal-overlay').classList.add('active');
+        
+        closeIndicator.addEventListener('click', () => {
+            clonedCard.classList.add('closing');
+            setTimeout(() => {
+                clonedCard.remove();
+                document.querySelector('.modal-overlay').classList.remove('active');
+            }, 300);
+        });
+        setTimeout(() => {
+            const contentInner = clonedCard.querySelector('.full-content-inner');
+            if(contentInner) {
+                contentInner.scrollTop = 0;
+            }
+        }, 50);
+    });
+});
+
+document.querySelector('.modal-overlay').addEventListener('click', () => {
+    const activeClone = document.querySelector('.timeline-card.cloned');
+    if(activeClone) {
+        activeClone.classList.add('closing');
+        setTimeout(() => {
+            activeClone.remove();
+            document.querySelector('.modal-overlay').classList.remove('active');
+        }, 300);
+    }
+});
+    </script>
+</body>
+</html>
